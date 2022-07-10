@@ -13,6 +13,8 @@ export const errorHandler = (
     });
   }
 
+  console.error(err);
+
   res.status(400).json({
     errors: [
       {
